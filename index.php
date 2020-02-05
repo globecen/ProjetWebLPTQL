@@ -1,4 +1,4 @@
 <?php
-include();
-include();
+include("header.php");
+include("footer.php");
 ?>
