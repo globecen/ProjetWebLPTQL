@@ -19,5 +19,6 @@
 <?php
 include("header.php");
 include("connexion.php");
+include("affichage_liste.php");
 include("footer.php");
 ?>
