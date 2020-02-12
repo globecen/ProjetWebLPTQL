@@ -13,7 +13,6 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Liste des activités</a>
       </li>
-    
     </ul>
   </div>
 </nav>

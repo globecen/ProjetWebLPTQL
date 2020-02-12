@@ -1,9 +1,14 @@
 <?php
 include_once('db.inc.php');
 session_start();
-if (!isset ($_SESSION['login']))
+if (isset ($_SESSION['login']))
 {
 	echo '<center>Vous etes connecter '.$_SESSION['login'].'</center>';
+	echo '<li class="nav-item">
+        <a class="nav-link" href="">Deco</a>
+	  </li>'
+	  ;
+	  session_destroy(); 
 }
 elseif (!isset ($_POST['email'])OR !isset ($_POST['pass'])) {
 	print'<center><form method="post" 	action="">
@@ -24,7 +29,10 @@ else {
 	if ($stmt->fetch()){
 		$_SESSION['login'] = $emailform;
 		echo '<center>Vous etes connecter '.$_SESSION['login'].'</center>';
-		echo'<a class="nav-link" href="#">Liste des activités</a>';
+		echo '<li class="nav-item">
+		<a class="nav-link" href="">Deco</a>
+	  </li>';
+	  session_destroy(); 
 	}
 	else {
 		print '<center>Identifiant ou mot de passse inccorect <br>';
