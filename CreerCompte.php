@@ -1,15 +1,26 @@
+<center>
+<form method="post" action="">
+	Email : <input type="text" name="email" required><br>
+	Password : <input type="password" name="password" required><br>
+	<input type="submit" value="Inscription">
+</form></center>
 <?php
 include_once("db.inc.php");
-$_POST['email']=$email;
-$_POST['email']=$password;
+$email = $_POST['email'];
+$password = $_POST['password'];
+try {
 $db=new PDO("$server:host=$host;port=$port;dbname=$base", $user, $pass);
-	$sql="INSERT INTO Utilisateurs values(,$email,$password)";
+// set the PDO error mode to exception
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$sql="INSERT INTO Utilisateurs values(NULL,'$email','$password')";
 	$stmt = $db->prepare($sql);
 	$stmt->execute();
-	print($sql);
+    }
+catch(PDOException $e)
+    {
+    echo $sql . "<br>" . $e->getMessage();
+    }
+
+$conn = null;
 ?>
-<center>
-<form method="POST" action="">
-	Email : <input type="text" name="email"><br>
-	Password : <input type="password" name="pass">
-</form></center>
+

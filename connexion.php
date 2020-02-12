@@ -15,7 +15,7 @@ elseif (!isset ($_POST['email'])OR !isset ($_POST['pass'])) {
 	Email : <input type="text" name="email" required> <br>
 	Mot de passe : <input type="password" name="pass" required><br>
 	<input type="submit" value="Se connecter">
-	</form></center>';
+		<br>Création de compte <a href="CreerCompte.php">Créer un compte</a></form></center></center>';
 }
 else {
 
@@ -37,11 +37,10 @@ else {
 	else {
 		print '<center>Identifiant ou mot de passse inccorect <br>';
 		print'<form method="post" 	action="">
-		Email : <input type="text" name="email"> <br>
-		Mot de passe : <input type="password" name="pass"><br>
+		Email : <input type="text" name="email" required> <br>
+		Mot de passe : <input type="password" name="pass" required><br>
 		<input type="submit" value="Se connecter">
-		</form><br>';
-		print 'Création de compte <a href="CreerCompte.php">Créer un compte</a></center>';
+		<br>Création de compte <a href="CreerCompte.php">Créer un compte</a></form></center>';
 	}
 } 
 
