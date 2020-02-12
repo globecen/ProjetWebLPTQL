@@ -11,9 +11,7 @@
 <body>
 	
 <form></form>
-<div class="container-content-grid">
 
-</div>
 </body>
 </html>
 <?php

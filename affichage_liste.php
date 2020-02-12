@@ -1,7 +1,9 @@
+<link rel="stylesheet" href="style.css">
+<div class="container-content-grid">
+
+
 <?php
-
 echo ("<div class=\"container-liste-flex child-grid-liste-flex\">");
-
     include_once('db.inc.php');
     $db=new PDO("$server:host=$host;port=$port;dbname=$base", $user, $pass);
     $idActivity =
@@ -13,4 +15,6 @@ echo ("<div class=\"container-liste-flex child-grid-liste-flex\">");
     }
 
 echo ("</div>");
+
 ?>
+</div>
