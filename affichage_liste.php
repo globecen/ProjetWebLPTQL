@@ -1,7 +1,3 @@
-<?php
-include("header.php");
-?>
-
 <html>
     <style>
         .container-liste-flex{
@@ -13,7 +9,6 @@ include("header.php");
         }
         .child-liste-flex{
             flex: 0 1 20%;
-
             padding: 50px;
             margin: 15px;
             background: #9e2c2c;
@@ -33,20 +28,22 @@ include("header.php");
     </style>
     <div class="container-content-grid">
         <div class="container-liste-flex child-grid-liste-flex">
-
             <?php
-            for ($i=0;$i<7;$i++){
-                echo ("<div class=\"child-liste-flex\">");
-                echo ("<h1>test ".$i."</h1>");
-                echo ("</div>");
-            }
-
+            include_once('db.inc.php');
+            $db=new PDO("$server:host=$host;port=$port;dbname=$base", $user, $pass);
+            $idActivity =
+            $sql="SELECT description_f FROM Fiches WHERE id_f == id_f FROM Associer WHERE id_a = $idActivity ";
+            foreach ($db->query($sql) as $fiche){
+                echo("<div class=\"child-liste-flex\">");
+                echo($fiche);
+                echo("</div>")
+}
             ?>
+
+
+
 
 
         </div>
     </div>
 </html>
-<?php
-include("footer.php");
-?>
