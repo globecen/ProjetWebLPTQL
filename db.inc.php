@@ -4,4 +4,5 @@
 	$base="projetweb";
 	$user="test";
 	$pass="test";
+	$port="3306";
 ?>
