@@ -24,18 +24,35 @@
             margin:auto;
         }
         #menu  {
-            float:left;
+            float:top;
             width:240px;
-            border: 2px solid black;
+            height: 200px;
+            border: 3px solid black;
+            margin-top: 5px;
         }
+        #sub-menu {
+            float:bottom;
+            width:240px;
+            height: 200px;
+            border: 3px solid black;
+            vertical-align: middle;
+            margin-top: 5px;
+
+
+        }
+
         #contenu {
-            margin-left:245px;
-            border: 2px solid black;
+            margin-left:255px;
+            border: 3px solid black;
+            margin-top: -419px;
+            margin-bottom: 5px;
+            height: 410px;
         }
         #footer {
             border: 2px solid black;
             text-align:center;
             clear:both;
+            height: 100px;
         }
     </style>
 
@@ -47,8 +64,12 @@
 <div id="main">
     <div id="menu">
 
+
     </div>
 
+        <div id="sub-menu">
+
+        </div></div>
     <div id="contenu">
         <div>
             <input type="checkbox" id="film" name="film"
