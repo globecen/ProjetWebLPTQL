@@ -13,9 +13,6 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Liste des activités</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Se deconnecter</a>
-      </li>
     </ul>
   </div>
 </nav>
