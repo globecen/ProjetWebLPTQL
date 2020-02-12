@@ -40,7 +40,8 @@ else {
 		Email : <input type="text" name="email"> <br>
 		Mot de passe : <input type="password" name="pass"><br>
 		<input type="submit" value="Se connecter">
-		</form> </center>';
+		</form><br>';
+		print 'Création de compte <a href="CreerCompte.php">Créer un compte</a></center>';
 	}
 } 
 

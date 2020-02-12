@@ -16,6 +16,7 @@
 </html>
 <?php
 include("header.php");
+//include("detailActiv.php");
 include("connexion.php");
 include("footer.php");
 ?>
