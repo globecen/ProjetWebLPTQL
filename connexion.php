@@ -24,6 +24,7 @@ else {
 	if ($stmt->fetch()){
 		$_SESSION['login'] = $emailform;
 		echo '<center>Vous etes connecter '.$_SESSION['login'].'</center>';
+		echo'<a class="nav-link" href="#">Liste des activités</a>';
 	}
 	else {
 		print '<center>Identifiant ou mot de passse inccorect <br>';
