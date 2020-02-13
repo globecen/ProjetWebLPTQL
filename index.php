@@ -16,11 +16,12 @@
 </html>
 <?php
 include("header.php");
+echo '<center><h1>On est trop nul</h1></center>';
 //include("detailActiv.php");
 //include("connexion.php");
 //include("affichage_liste.php");
 //include("AffichageActivites.php");
-include("AffichageListes.php");
+//include("AffichageListes.php");
 
 include("footer.php");
 

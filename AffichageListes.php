@@ -1,5 +1,6 @@
 <?php
 include_once("db.inc.php");
+include("header.php");
 echo '<center><form method="post" action="">';
 $db=new PDO("$server:host=$host;port=$port;dbname=$base", $user, $pass);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -9,6 +10,7 @@ echo 'Choix de l activite
 foreach ($db->query($sql) as $activites){
 	echo '<option value="'.$activites['note'].'">'.$activites['note'].'</option>';
 }
+echo '</select>';
 echo '<input type="submit" value="Afficher les listes">';
 
 $choixActivity = $_POST['choixActivite'];
@@ -26,4 +28,5 @@ foreach ($db->query($sql2) as $listes){
 	echo '<br>';
 }
 echo '</table>';
+include("footer.php");
 ?>

@@ -25,11 +25,11 @@
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
+        <h5 class="text-uppercase">Lien</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">NULL 1</a>
+            <a href="connexion.php">Se connecter</a>
           </li>
           </li>
         </ul>
@@ -41,11 +41,11 @@
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
+        <h5 class="text-uppercase">Lien</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">null</a>
+            <a href="AffichesListes.php">Listes des activites</a>
           </li>
         </ul>
 

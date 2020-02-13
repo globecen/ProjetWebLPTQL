@@ -1,4 +1,5 @@
 <?php
+include("header.php");
 include_once('db.inc.php');
 session_start();
 if (isset ($_SESSION['login']))
@@ -43,5 +44,5 @@ else {
 		<br>Création de compte <a href="CreerCompte.php">Créer un compte</a></form></center>';
 	}
 } 
-
+include("footer.php");
 ?>
