@@ -19,7 +19,7 @@ include("header.php");
 //include("detailActiv.php");
 //include("connexion.php");
 //include("affichage_liste.php");
-include("AffichageActivites.php");
-
+//include("AffichageActivites.php");
+include("AffichageListes.php");
 include("footer.php");
 ?>
