@@ -10,7 +10,6 @@ echo 'Choix de l activite
 foreach ($db->query($sql) as $activites){
 	echo '<option value="'.$activites['note'].'">'.$activites['note'].'</option>';
 }
-echo '</select>';
 echo '<input type="submit" value="Afficher les listes">';
 
 $choixActivity = $_POST['choixActivite'];
@@ -23,6 +22,7 @@ echo '<table>';
 echo'<th colspan="2">Ma liste de fiches :</th></table>';
 echo '<table border="1">'; 
 foreach ($db->query($sql2) as $listes){
+	
 	echo $listes['id_f'];
 	echo $listes['description_f'];
 	echo '<br>';
