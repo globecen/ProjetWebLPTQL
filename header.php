@@ -20,7 +20,7 @@
         <a class="nav-link" href="AffichageListes.php">Liste des activités</a>
 </li>
 <li class="nav-item">
-        <a class="nav-link" href="admin.php">Administration</a>
+        <a class="nav-link" href="admin.php">Droits</a>
 </li>
     </ul>
   </div>
