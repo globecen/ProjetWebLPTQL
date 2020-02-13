@@ -22,4 +22,5 @@ include("header.php");
 //include("AffichageActivites.php");
 include("AffichageListes.php");
 include("footer.php");
+include("addJsCustom.php");
 ?>

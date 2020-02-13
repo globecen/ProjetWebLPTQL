@@ -15,19 +15,7 @@ $db=new PDO("$server:host=$host;port=$port;dbname=$base", $user, $pass);
 	$sql2="SELECT Fiches.description_f FROM Activites,Associer,Fiches where Activites.id_a=Associer.id_a AND Fiches.id_f=Associer.id_f and Associer.id_a=1"; 
 
 ?>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous">
-			  function getIdActivite(value){
-				  var valIdActivite = value;
-				  console.log(valIdActivite);
-				  $.ajax({
-					  url:"AffichageListes.php",
-					  method:"POST",
-					  data: {choixActivity : valIdActivite}
-				  }).done((html)=>{
-					  $('center').append(html);
-				  });
-			  }
- </script>
+
  <?php
  $choixActivity = $_POST['choixActivity'];
  echo $choixActivity;
