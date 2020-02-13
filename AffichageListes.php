@@ -21,24 +21,9 @@ echo '<table>';
 echo'<th colspan="2">Ma liste de fiches :</th></table>';
 echo '<table border="1">'; 
 foreach ($db->query($sql2) as $listes){
-    echo ("<form method='post' action=''> <input type=\"radio\" name=\"choixFiche\" onclick=\"this.form.submit();\" value=\"".$listes['id_f']."\" ></form>");
 	echo $listes['id_f'];
 	echo $listes['description_f'];
 	echo '<br>';
 }
 echo '</table>';
-$choixFiche = $_POST['choixFiche'];
-$sql3="SELECT * FROM Fiches where id_f=$choixFiche";
-echo '<form action="">';
-foreach($db->query($sql3) as $ficheContent){
-    echo '<input type="number" name="ficheEditId" value="'.$ficheContent['id_f'].'">';
-    echo '<input type="text" name="ficheEditTexte" value="'.$ficheContent['description_f'].'">';
-}
-echo '<input type="submit" value="modifier fiche">';
-
-echo '</form>';
-$idFiche = $_POST['ficheEditId'];
-$textFiche = $_POST['ficheEditTexte'];
-$sql4="UPDATE Fiches SET description_f=$textFiche WHERE id_f=$idFiche";
-$db->exec($sql4);
 ?>
