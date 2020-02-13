@@ -21,6 +21,7 @@ include("header.php");
 //include("affichage_liste.php");
 //include("AffichageActivites.php");
 include("AffichageListes.php");
+
 include("footer.php");
-include("addJsCustom.php");
+
 ?>
