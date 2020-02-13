@@ -68,16 +68,18 @@
     echo ("<a class=\"child-grid-new-fiche\" href=\"add_fiche_liste.php\">nouvelle fiche</a>");
     echo ("<div class=\"child-grid-liste-flex\">");
     echo ("<div class=\"container-liste-flex\">");
-    /*include_once('db.inc.php');
+    
+   /* include_once('db.inc.php');
     $db=new PDO("$server:host=$host;port=$port;dbname=$base", $user, $pass);
     $idActivity =
-    $sql="SELECT description_f FROM Fiches WHERE id_f == id_f FROM Associer WHERE id_a = $idActivity ";
+    $sql="SELECT description_f FROM Fiches WHERE id_f = id_f and id_a = $idActivity ";
     foreach ($db->query($sql) as $fiche){
         echo("<div class=\"child-liste-flex\">");
         echo($fiche);
         echo("</div>");
     }
     */
+    
     for ($i = 0;$i <7;$i++){
         echo("<div class=\"child-liste-flex\">");
         echo($i);

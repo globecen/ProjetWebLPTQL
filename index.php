@@ -17,6 +17,9 @@
 <?php
 include("header.php");
 //include("detailActiv.php");
-include("connexion.php");
+//include("connexion.php");
+//include("affichage_liste.php");
+include("AffichageActivites.php");
+
 include("footer.php");
 ?>
